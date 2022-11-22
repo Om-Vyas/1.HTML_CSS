@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="icon" href="./logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="data-container">
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <div class="container">
+        <main>
+            <form action="#" id="survey-form">
+                <label for="name" id="name-label">
+                    Name<br>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </label>
+                <label for="email" id="email-label">
+                    Email<br>
+                    <input type="email" id="email" placeholder="Enter your Email" required>
+                </label>
+                <label for="number" id="number-label">
+                    Age(optional)<br>
+                    <input type="number" id="number" placeholder="Age" min="18" max="35">
+                </label>
+                <label for="dropdown">
+                    Which option best describes your current role?
+                    <select name="role" id="dropdown">
+                        <optgroup label="Select current role"></optgroup>
+                        <option value="st">Student</option>
+                        <option value="ftj">Full Time Job</option>
+                        <option value="ftl">Full Time Learner</option>
+                        <option value="ot">Other</option>
+                    </select>
+                </label>
+                <label for="recommend">
+                    Would you recommend this to a friend?
+                </label><br>
+                <input type="radio" name="rcmnd" id="def" value="def">Definitely<br>
+                <input type="radio" name="rcmnd" id="mb" value="mb">May be<br>
+                <input type="radio" name="rcmnd" id="ntsr" value="ntsr">Not Sure<br>
+                
+                <label for="improved">
+                    What would you like to see improved?<br>
+                    <label for="fep">
+                        <input type="checkbox" name="course" id="fep" value="fep"> Front-end Projects
+                    </label><br>
+                    <label for="bep">
+                        <input type="checkbox" name="course" id="bep" value="bep"> Back-end Projects
+                    </label><br>
+                    <label for="dv">
+                        <input type="checkbox" name="course" id="dv" value="dv"> Data Visualization
+                    </label><br>
+                    <label for="vid">
+                        <input type="checkbox" name="course" id="vid" value="vid"> Videos
+                    </label><br>
+                </label>
+                <label for="cmnt">
+                    Any comments or suggestions?
+                    <textarea name="comm" id="cmnt" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+                </label>
+                <input type="submit" value="submit" id="submit">
+            </form>
+        </main>
+    </div>
+    </div>
+</body>
+</html>
